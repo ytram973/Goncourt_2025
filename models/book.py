@@ -4,6 +4,7 @@ from typing import Optional
 
 @dataclass
 class Book:
+    
     id_book: int
     title: str
     summary: Optional[str]
@@ -12,5 +13,6 @@ class Book:
     main_character: Optional[str]
     isbn: Optional[str]
     price: Optional[float]
+    author_first_name: str | None = None   
     author_last_name: str | None = None   
     publisher_name: str | None = None
